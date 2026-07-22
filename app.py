@@ -136,7 +136,7 @@ if admin_password_input == os.getenv("ADMIN_PASSWORD"):
                 try:
                     update_vector_db()
                     status.update(label="Sincronización Exitosa ✅", state="complete", expanded=False)
-                    st.sidebar.toast("¡Base de conocimiento actualizada!")
+                    st.toast("¡Documentos sincronizados con éxito!")
                 except Exception as e:
                     status.update(label="Error en procesamiento ❌", state="error")
                     st.sidebar.error(f"Error al indexar el PDF: {e}")
