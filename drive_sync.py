@@ -16,10 +16,7 @@ DOWNLOAD_PATH = 'documento_empresa.pdf'
 
 
 def get_credentials():
-  """Obtiene las credenciales ya sea desde Streamlit Secrets (en la nube)
 
-  o desde el archivo credentials.json local (en tu PC).
-  """
   # 1. Si estamos en Streamlit Cloud y existen los secretos de GCP
   if hasattr(st, 'secrets') and 'gcp_service_account' in st.secrets:
     creds_dict = dict(st.secrets['gcp_service_account'])
