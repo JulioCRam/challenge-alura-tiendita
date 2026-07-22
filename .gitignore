@@ -1,0 +1,6 @@
+.venv/
+.env
+credentials.json
+vector_db/
+__pycache__/
+.streamlit/
