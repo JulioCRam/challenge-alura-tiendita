@@ -29,7 +29,7 @@ git clone https://github.com/JulioCRam/challenge-alura-tiendita.git
 cd challenge-alura-tiendita
 2.	Crea y activa tu entorno virtual:
 python -m venv .venv
-# En Windows:
+En Windows:
 .venv\Scripts\activate
 3.	Instala las dependencias:
 pip install -r requirements.txt
